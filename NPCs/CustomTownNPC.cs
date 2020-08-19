@@ -1,4 +1,4 @@
-﻿using Terraria;
+using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -127,6 +127,10 @@ namespace TMMC.NPCs
                 nextSlot++;
 
                 shop.item[nextSlot].SetDefaults(ModLoader.GetMod("PreHMTeleportation").ItemType("TransporterKey"));
+                shop.item[nextSlot].shopCustomPrice = 1;
+                nextSlot++;
+
+                shop.item[nextSlot].SetDefaults(ItemID.PalladiumColumn);
                 shop.item[nextSlot].shopCustomPrice = 1;
                 nextSlot++;
 
